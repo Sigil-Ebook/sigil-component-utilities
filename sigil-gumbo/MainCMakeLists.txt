@@ -1,0 +1,18 @@
+########################################################
+#  
+#  This is a CMake configuration file.
+#  To use it you need CMake which can be 
+#  downloaded from here: 
+#    http://www.cmake.org/cmake/resources/software.html
+#
+#########################################################
+
+cmake_minimum_required( VERSION 3.0 ) 
+
+project( sigiltests ) 
+
+set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/.libs )
+set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/.libs )
+
+add_subdirectory( src )
+
